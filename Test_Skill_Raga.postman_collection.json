@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "b0245466-b9b5-4e5a-8e5f-f91cae99cba8",
+		"name": "Test_Skill_Raga",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20288623"
+	},
+	"item": [
+		{
+			"name": "TEST_MCF - List BPKB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5001/mcf/bpkb/list"
+			},
+			"response": []
+		},
+		{
+			"name": "TEST_MCF - Get BPKB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5001/mcf/bpkb/list"
+			},
+			"response": []
+		},
+		{
+			"name": "TEST_MCF - List Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5001/mcf/location/list"
+			},
+			"response": []
+		},
+		{
+			"name": "TEST_MCF - Add BPKB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"agreement_number\": \"AN_001\",\r\n  \"bpkb_no\": \"bpkb_001\",\r\n  \"bpkp_date\": \"2023-05-19T03:38:39.166Z\",\r\n  \"faktur_no\": \"F_001\",\r\n  \"faktur_date\": \"2023-05-19T03:38:39.166Z\",\r\n  \"LocationId\": \"111\",\r\n  \"police_no\": \"pl_001\",\r\n  \"bpkb_date\": \"2023-05-19T03:38:39.166Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5001/mcf/bpkb/add"
+			},
+			"response": []
+		}
+	]
+}
