@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -53,7 +54,7 @@ namespace MCFWebAPI.Repositories
                     BPKB entry = new BPKB();
                     entry.agreement_number = bpkb.agreement_number;
                     entry.bpkb_no = bpkb.bpkb_no;
-                    entry.bpkb_date = bpkb.bpkb_date;
+                    entry.bpkb_date = DateTime.ParseExact(bpkb.bpkb_date.ToShortDateString(), "d", CultureInfo.InvariantCulture);
                     entry.faktur_no = bpkb.faktur_no;
                     entry.faktur_date = bpkb.faktur_date;
                     entry.Location = _context.Locations.FirstOrDefault(p => p.locationId == bpkb.LocationId);

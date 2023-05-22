@@ -2,7 +2,7 @@
   "api_output_ok": "Success",
   "api_output_failed": "Failed",
   "data_found": "Data Found",
-  "data_not_found": "Data Not Found",
+  "data_not_found": "No Data",
   "process_success": "Processed",
   "process_not_success": "Not Processed",
   "save_success": "Saved",
